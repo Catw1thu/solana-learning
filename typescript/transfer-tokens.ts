@@ -2,7 +2,7 @@ import { getKeypairFromEnvironment } from "@solana-developers/helpers";
 import { getOrCreateAssociatedTokenAccount, transfer } from "@solana/spl-token";
 import { clusterApiUrl, Connection, PublicKey } from "@solana/web3.js";
 import "dotenv/config";
-import getSolscanLink from "./typescript/solscan";
+import getSolscanLink from "./solscan.ts";
 
 const connection = new Connection(clusterApiUrl("devnet"));
 const sender = getKeypairFromEnvironment("SECRET_KEY");
